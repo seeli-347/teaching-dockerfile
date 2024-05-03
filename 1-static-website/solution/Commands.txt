@@ -1,0 +1,9 @@
+# Build the image
+
+docker build -t staticweb:1.0  .     
+
+# Run the image
+
+docker run -d -p 8900:80 staticweb:1.0
+
+

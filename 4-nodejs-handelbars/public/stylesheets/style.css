@@ -1,0 +1,168 @@
+/* body {
+  background-color: red;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #ddd;
+}
+
+.navbar {
+  border-bottom: rgb(98, 98, 180) 3px solid;
+  opacity: .4;
+}
+
+
+#home-section {
+  background-color: red;
+  background: url(/images/home.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 700px;
+}
+#home-section .dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 700px;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+#home-section .home-inner {
+  padding-top: 100px;
+}
+
+#home-section .card-form {
+  opacity: 0.8;
+}
+
+#home-section .fas,
+#create-section .fas {
+  color: #008ed6;
+  background: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#explore-section .fas,
+#share-section .fas {
+  background: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* Table styling */
+
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 70%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #525252;}
+
+
+#customers tr:hover {background-color: #5252f2}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+
+
+.list {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .card-conatiner {
+  height: 100vh;
+  display: flex;
+  
+} */
+
+#project {
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+.project-container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-around;
+   padding: 1rem;
+}
+
+.nav-link::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 0;
+  background-color: red;
+  transition: all .7s;
+}
+
+.nav-link:hover::after {
+   width: 100%;
+}
+
+.project-card {
+   border: 1px white solid;
+   width: 25%;
+   padding: 1.5rem;
+   box-shadow: .5rem .5rem 1rem rgb(122, 122, 122);
+   border-radius: .5rem;
+   margin-bottom: 1rem;
+}
+
+.card-img img {
+   width: 100%;
+   display: block;
+}
+
+.btn-container {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   padding-left: 1.5rem;
+}
+
+.btn-link {
+   background-color: rgb(34, 67, 104);
+   /* display: inline-block; */
+   width: 12rem;
+   text-align: center;
+   padding: .5rem;
+   margin-right: 1rem;
+   margin-top: 1rem;
+   color: black;
+   color: aliceblue;
+   font-size: 1.3rem;
+   border-radius: .5rem;
+}
+.btn-link:hover {
+   background-color: rgb(30, 30, 57);
+   text-decoration: none;
+   color: aliceblue;
+}

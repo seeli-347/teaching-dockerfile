@@ -1,0 +1,9 @@
+# Run the image
+
+# Der erste Versuch der nicht funktionieren wird
+
+docker run -d -p 3000:3000 -v .:/app hbars:1.0
+
+# So klappt es aber
+
+docker run -d -p 3000:3000 -v .:/app -v /app/node_modules hbars:1.0

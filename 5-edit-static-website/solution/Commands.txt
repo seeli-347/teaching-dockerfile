@@ -1,0 +1,3 @@
+# Run the image 
+
+docker run -d -p 8900:80 -v .:/usr/share/nginx/html staticweb:1.0

@@ -1,0 +1,21 @@
+<section class="projects" id="project"> 
+        <div class="project-container">
+
+           {{#each cardList}}
+              <div class="project-card">
+
+                <div class="card-img">
+                    <img src= {{image}}  alt="linkedin">
+                </div>
+
+                <div class="btn-container">
+                    <a href="https://github.com/pv-kiran/linkedin-clone/" target="_blank" class="btn-link">{{btnLeft}}</a>
+                    <a href="https://pv-clone-linkedin.netlify.app/" class="btn-link" target="_blank">{{btnRight}}</a>
+                </div>
+
+              </div>
+           {{/each}}
+
+           
+        </div>
+      </section>
