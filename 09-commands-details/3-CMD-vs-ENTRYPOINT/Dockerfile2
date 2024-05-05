@@ -1,0 +1,8 @@
+FROM ubuntu
+
+
+WORKDIR /the/workdir/path
+
+# Dem echo Befehl wird kein Parameter mitgegeben"
+
+ENTRYPOINT ["echo"]

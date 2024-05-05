@@ -1,0 +1,22 @@
+FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
+
+WORKDIR /src
+
+COPY Taschenrechner.csproj ./
+
+RUN dotnet restore Taschenrechner.csproj
+
+COPY . .
+
+RUN dotnet build Taschenrechner.csproj -c Release -o /app/build
+
+RUN dotnet publish Taschenrechner.csproj -c Release -o /app/publish /p:UseAppHost=false
+
+FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS final
+WORKDIR /app
+
+COPY --from=build /app/publish .
+
+EXPOSE 80
+
+ENTRYPOINT ["dotnet", "Taschenrechner.dll"]

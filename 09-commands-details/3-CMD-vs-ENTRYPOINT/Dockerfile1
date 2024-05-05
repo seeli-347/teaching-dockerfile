@@ -1,0 +1,5 @@
+FROM ubuntu
+
+WORKDIR /the/workdir/path
+
+CMD ["echo", "Text der ausgegeben wird"]

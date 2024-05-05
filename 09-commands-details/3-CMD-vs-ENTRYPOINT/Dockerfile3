@@ -1,0 +1,6 @@
+FROM ubuntu
+
+
+ENTRYPOINT ["echo"]
+
+CMD ["Dies ist der Standardparameter für den echo Command"]
