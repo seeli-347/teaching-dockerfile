@@ -7,7 +7,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 // setup the logger
-app.use(morgan('tiny'));
+app.use(morgan('tiny')); 
 
 app.get('/', async (req, res) => {
   const dateTime = await getDateTime();
